@@ -1,7 +1,10 @@
 name: binder-experiments
+channels:
+  - conda-forge
 dependencies:
-  - numpy
-  - matplotlib
-  - networkx
-  - graphviz
-  - treelib
+  - jupyterlab >=3.0.16,<4 # or `notebook >=6.4,<7` if that's your thing
+  - networkx >=2.6.1
+  - python-graphviz        # this is the equivalent of pip's `graphviz`
+  - pygraphviz ==1.7
+  - rdflib >=5.0.0
+# from https://discourse.jupyter.org/t/binder-fails-to-compile-pygraphviz/9912/5

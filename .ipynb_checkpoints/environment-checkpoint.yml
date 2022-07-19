@@ -1,0 +1,7 @@
+name: binder-experiments
+dependencies:
+  - numpy
+  - matplotlib
+  - networkx
+  - graphviz
+  - treelib
